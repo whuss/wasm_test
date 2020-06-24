@@ -35,6 +35,19 @@ Rust-generated WebAssembly and using them to create a Website.
 npm init wasm-app
 ```
 
+## Runnding
+
+Start the development server with:
+```
+$ cd www
+$ npm run start
+```
+
+Rebuild wasm
+```
+wasm-pack build
+```
+
 ## 🔋 Batteries Included
 
 - `.gitignore`: ignores `node_modules`
