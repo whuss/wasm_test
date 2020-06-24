@@ -1,13 +1,18 @@
-import { Universe } from "wasm-game-of-life";
+// import { Universe } from "wasm-game-of-life";
 
-const pre = document.getElementById("game-of-life-canvas");
-const universe = Universe.new();
+// const pre = document.getElementById("game-of-life-canvas");
+// const universe = Universe.new();
 
-const renderLoop = () => {
-    pre.textContent = universe.render();
-    universe.tick();
+// const renderLoop = () => {
+//     pre.textContent = universe.render();
+//     universe.tick();
 
-    requestAnimationFrame(renderLoop);
-};
+//     requestAnimationFrame(renderLoop);
+// };
 
-requestAnimationFrame(renderLoop);
+// requestAnimationFrame(renderLoop);
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+ReactDOM.render(React.createElement("div", null, `Hello React`), document.getElementById("app"));
