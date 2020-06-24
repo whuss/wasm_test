@@ -42,7 +42,7 @@ const Life = () => {
     </>);
 }
 
-const App = ({ props }) => (
+const App: React.FC = () => (
   <div>
     Webpack HMR Example
     <Life/>
