@@ -36,6 +36,7 @@
   "devDependencies": {
     "@babel/preset-react": "^7.10.1",
     "copy-webpack-plugin": "^5.0.0",
+    "error-overlay-webpack-plugin": "^0.4.1",
     "hello-wasm-pack": "^0.1.0",
     "webpack": "^4.29.3",
     "webpack-cli": "^3.1.0",

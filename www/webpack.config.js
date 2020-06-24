@@ -1,4 +1,5 @@
 const CopyWebpackPlugin = require("copy-webpack-plugin");
+const ErrorOverlayPlugin = require('error-overlay-webpack-plugin')
 const path = require("path");
 
 module.exports = {
@@ -11,7 +12,8 @@ module.exports = {
         extensions: ['.js', '.jsx', '.ts', '.tsx']
     },
     mode: "development",
-    plugins: [new CopyWebpackPlugin(["index.html"])],
+    plugins: [new CopyWebpackPlugin(["index.html"]), new ErrorOverlayPlugin()],
+    devtool: 'cheap-module-source-map',
     devServer: {
         contentBase: path.resolve(__dirname, "dist"),
         open: true,
