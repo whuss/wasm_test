@@ -8,7 +8,7 @@ module.exports = {
         filename: "bootstrap.js",
     },
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
     },
     mode: "development",
     plugins: [new CopyWebpackPlugin(["index.html"])],
@@ -21,7 +21,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)$/,
+                test: /\.(js|jsx|ts|tsx)$/,
                 exclude: /node_modules/,
                 use: {
                     loader: "babel-loader",
